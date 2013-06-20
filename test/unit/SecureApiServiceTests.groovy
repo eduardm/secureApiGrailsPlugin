@@ -1,13 +1,10 @@
-
-
 import grails.test.mixin.TestFor
+
 import org.junit.Before
 import org.junit.Test
+
 import api.ApiRequestAuthorizer
 
-/**
- * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
- */
 @TestFor(SecureApiService)
 class SecureApiServiceTests {
     def secureApiService
@@ -60,10 +57,8 @@ class SecureApiServiceTests {
             forwardURI: "/secureApiSampleApp/api/getUser/1"
     )
 
-
-
     @Before
-    public void setUp() {
+    void setUp() {
         secureApiService = new SecureApiService()
         def apiRequestAuthorizer = new ApiRequestAuthorizer() {
             @Override
@@ -78,7 +73,6 @@ class SecureApiServiceTests {
     void testValidRequest() {
         def result = secureApiService.isAuthorizedRequest(mockedValidRequest)
         assertEquals(200, result)
-
     }
 
     @Test
