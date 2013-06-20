@@ -1,6 +1,3 @@
-secureApiGrailsPlugin
-=====================
-
 Secure API Grails plugin
 ==========================
 
