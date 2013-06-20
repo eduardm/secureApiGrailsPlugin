@@ -1,15 +1,18 @@
 package api.exception
 
-public class ApiInvalidSignatureException extends ApiException {
-    public ApiInvalidSignatureException(String message) {
-        super(message);
+class ApiInvalidSignatureException extends ApiException {
+
+    private static final long serialVersionUID = 1
+
+    ApiInvalidSignatureException(String message) {
+        super(message)
     }
 
-    public ApiInvalidSignatureException(Throwable cause) {
-        super(cause);
+    ApiInvalidSignatureException(Throwable cause) {
+        super(cause)
     }
 
-    public ApiInvalidSignatureException(String message, Throwable cause) {
-        super(message, cause);
+    ApiInvalidSignatureException(String message, Throwable cause) {
+        super(message, cause)
     }
 }
