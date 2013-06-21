@@ -10,3 +10,7 @@ stacktrace.log
 .idea/*
 .classpath
 .project
+/web-app
+*.zip
+plugin.xml
+/target

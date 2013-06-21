@@ -1,18 +1,18 @@
 package api.exception
 
-@SuppressWarnings("serial")
-public class ApiMessageSignerException extends ApiException {
+class ApiMessageSignerException extends ApiException {
 
-    public ApiMessageSignerException(String message) {
-        super(message);
+    private static final long serialVersionUID = 1
+
+    ApiMessageSignerException(String message) {
+        super(message)
     }
 
-    public ApiMessageSignerException(Throwable cause) {
-        super(cause);
+    ApiMessageSignerException(Throwable cause) {
+        super(cause)
     }
 
-    public ApiMessageSignerException(String message, Throwable cause) {
-        super(message, cause);
+    ApiMessageSignerException(String message, Throwable cause) {
+        super(message, cause)
     }
-
 }

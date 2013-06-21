@@ -1,10 +1,8 @@
-
-
-import api.exception.ApiRequestExpiredException
+import api.ApiRequestAuthorizer
 import api.exception.ApiInvalidKeyException
 import api.exception.ApiInvalidSignatureException
 import api.exception.ApiMessageSignerException
-import api.ApiRequestAuthorizer
+import api.exception.ApiRequestExpiredException
 
 class SecureApiService {
     static transactional = false
@@ -12,8 +10,8 @@ class SecureApiService {
     ApiRequestAuthorizer apiRequestAuthorizer
     def grailsApplication
 
-    def isAuthorizedRequest(request) {
-        def status
+    int isAuthorizedRequest(request) {
+        int status
         def consumers = grailsApplication.config.grails.secure.api.consumers
         try {
             if (apiRequestAuthorizer.isAuthorized(request, consumers)) {

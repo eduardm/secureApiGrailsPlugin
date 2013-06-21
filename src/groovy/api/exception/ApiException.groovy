@@ -1,17 +1,18 @@
 package api.exception
 
-@SuppressWarnings("serial")
-public abstract class ApiException extends Exception {
+abstract class ApiException extends Exception {
 
-    public ApiException(String message) {
-        super(message);
+    private static final long serialVersionUID = 1
+
+    ApiException(String message) {
+        super(message)
     }
 
-    public ApiException(Throwable cause) {
-        super(cause);
+    ApiException(Throwable cause) {
+        super(cause)
     }
 
-    public ApiException(String message, Throwable cause) {
-        super(message, cause);
+    ApiException(String message, Throwable cause) {
+        super(message, cause)
     }
 }

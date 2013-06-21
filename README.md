@@ -6,11 +6,11 @@ Simple Grails plugin to add Oauth like authorization to existing API
 
 # Introduction
 
-This project contains the open source **Secure API Grail Pluing** that allows you to easily add authorization to your provided API.
+This project contains the open source **Secure API Grail Plugin** that allows you to easily add authorization to your provided API.
 
 I created this plugin because there are several plugins that handles the client side (for connecting to already secured APIs), but none for the API providers.
 
-**Secure API Grail Pluing** provides the following Grails artefacts:
+**Secure API Grail Plugin** provides the following Grails artefacts:
 
 * **SecureApiService** - A service that expose a single method *isAuthorizeRequest* to be used in your filters or interceptor before executing and API call.
 
@@ -18,7 +18,7 @@ I created this plugin because there are several plugins that handles the client 
 
 # Installation
 
-Declare the plugin dependency in the BuildConfig.groovvy file, as shown here:
+Declare the plugin dependency in the BuildConfig.groovy file, as shown here:
 
 ```groovy
 grails.project.dependency.resolution = {
@@ -37,12 +37,7 @@ grails.project.dependency.resolution = {
 }
 ```
 
-Or download the zip packed plugin from [here](https://github.com/eduardm/secureApiGrailsPlugin/tree/master/packagedPlugin) and install with with grails install-plugin command
-
-
 # Config
-
-
 
 Add your clients pairs of key/secret in *grails-app/conf/Config.groovy_:*
 
@@ -81,4 +76,4 @@ The underlying APIs are generally stable, however we may make changes to the lib
 
 # Feedback
 
-The **Secure API Grail Pluing** is licensed under the [Apache Licence, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+The **Secure API Grail Plugin** is licensed under the [Apache Licence, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).

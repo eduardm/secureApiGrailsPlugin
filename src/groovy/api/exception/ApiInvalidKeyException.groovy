@@ -1,16 +1,18 @@
 package api.exception
 
-public class ApiInvalidKeyException extends ApiException {
+class ApiInvalidKeyException extends ApiException {
 
-    public ApiInvalidKeyException(String message) {
-        super(message);
+    private static final long serialVersionUID = 1
+
+    ApiInvalidKeyException(String message) {
+        super(message)
     }
 
-    public ApiInvalidKeyException(Throwable cause) {
-        super(cause);
+    ApiInvalidKeyException(Throwable cause) {
+        super(cause)
     }
 
-    public ApiInvalidKeyException(String message, Throwable cause) {
-        super(message, cause);
+    ApiInvalidKeyException(String message, Throwable cause) {
+        super(message, cause)
     }
 }
